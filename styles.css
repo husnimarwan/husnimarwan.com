@@ -247,19 +247,38 @@ body::before {
 
 .social-links {
     display: flex;
-    gap: 2rem;
+    gap: 1.8rem;
     justify-content: center;
+    margin-top: 2rem;
 }
 
 .social-links a {
     color: white;
-    font-size: 2rem;
+    font-size: 1.8rem;
     transition: all 0.3s ease;
+    padding: 0.5rem;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.1);
+    width: 3.5rem;
+    height: 3.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
 }
 
 .social-links a:hover {
-    transform: translateY(-5px) scale(1.1);
-    color: #E67E22;
+    transform: translateY(-5px);
+    background: rgba(255, 255, 255, 0.2);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.social-links a:hover i {
+    transform: scale(1.1);
+}
+
+.social-links i {
+    transition: transform 0.3s ease;
 }
 
 /* Sections Common Styles */
@@ -553,5 +572,15 @@ footer {
 
     h2 {
         font-size: 2.5rem;
+    }
+
+    .social-links {
+        gap: 1.2rem;
+    }
+    
+    .social-links a {
+        font-size: 1.5rem;
+        width: 3rem;
+        height: 3rem;
     }
 } 
