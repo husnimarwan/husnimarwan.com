@@ -196,10 +196,11 @@ body::before {
 
 .highlight {
     position: relative;
-    display: inline-block;
+    display: block;
     font-weight: 800;
     color: var(--accent-color);
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+    margin-top: 0.5rem;
 }
 
 .highlight::after {
@@ -510,12 +511,22 @@ footer {
         display: flex;
     }
 
+    .hero-content {
+        padding: 2rem 1rem;
+    }
+
     .hero-content h1 {
-        font-size: 2.5rem;
+        font-size: 2rem;
+        line-height: 1.2;
+    }
+
+    .highlight {
+        margin-top: 0.3rem;
+        font-size: 2.2rem;
     }
 
     .typing-text {
-        font-size: 1.5rem;
+        font-size: 1.3rem;
     }
 
     section {
